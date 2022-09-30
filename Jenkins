@@ -1,0 +1,10 @@
+pipeline {
+	agent any
+	stages {		
+		stage("Deploy to Tomcat") {
+			steps {
+                bat 'xcopy /s "C:\\Users\\Brian.Gonzalez\\Documents\\Responsive Web Design\\Awesome  Landing Page Website" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\AwesomeLandingPage" /Y'
+			}
+		}
+	}
+}
